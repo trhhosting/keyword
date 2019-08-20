@@ -1,0 +1,34 @@
+# Struct tags
+## Tags are optional to use when declaring models. GORM supports the following tags:
+Tag	            Description
+column	        Specifies column name
+type	        Specifies column data type
+size	        Specifies column size, default 255
+primary_key	    Specifies column as primary key
+unique	        Specifies column as unique
+default	        Specifies column default value
+precision	    Specifies column precision
+not null	    Specifies column as NOT NULL
+auto_increment	Specifies column auto incrementable or not
+index	        Create index with or without name, same name creates composite indexes
+unique_index	Like INDEX, create unique index
+embedded	    Set struct as embedded
+embedded_prefix	Set embedded struct’s prefix name
+-	            Ignore this fields
+
+# Struct tags for Associations
+## Check out the Associations section for details
+Tag	                                Description
+many2many	                        Specifies join table name
+foreignkey	                        Specifies foreign key
+association_foreignkey	            Specifies association foreign key
+polymorphic	                        Specifies polymorphic type
+polymorphic_value	                Specifies polymorphic value
+jointable_foreignkey	            Specifies foreign key of jointable
+association_jointable_foreignkey	Specifies association foreign key of jointable
+save_associations	                AutoSave associations or not
+association_autoupdate	            AutoUpdate associations or not
+association_autocreate	            AutoCreate associations or not
+association_save_reference	        AutoSave associations reference or not
+preload	                            Auto Preload associations or not
+
