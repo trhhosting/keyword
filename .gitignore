@@ -106,3 +106,5 @@ vendor/
 build/
 .DS_Store
 app/
+
+.idea/
